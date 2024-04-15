@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination</title>
+</head>
+<style>
+    body{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .btn-icon{
+        height: 24px;
+        width: 24px;
+        stroke: peachpuff;
+    }
+    .btn-icon :hover{
+        stroke: black;
+    }
+    .btn{
+        border: 1px solid maroon;
+        padding: 10px;
+        height: 48px;
+        width: 48px;
+        border-radius: 50%;
+        background:none;
+    }
+    .btn:hover{
+        background-color: bisque;
+
+    }
+    .btn:hover .btn-icon{
+        stroke: white;
+    }
+    .page-link{
+        text-decoration: none;
+        color: black;
+        font-size: 24px;
+        height: 48px;
+        width: 48px;
+        border-radius: 50%;
+        /* display: flex; */
+        justify-content: center;
+        /* align-items: center; */
+    }
+   .page-link :hover{
+        background-color: grey;
+    }
+    .Pagination{
+        display: flex;
+        gap: 15px;
+        align-content: center;
+    }
+</style>
+<body>
+    <div class="Pagination">
+     <button class="btn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+          </svg>
+     </button>
+     <div>
+         <a href="#" class="page-link">1</a>
+         <a href="#" class="page-link">2</a>
+         <a href="#" class="page-link">3</a>
+         <a href="#" class="page-link">4</a>
+         <a href="#" class="page-link">5</a>
+         <a href="#" class="page-link">6</a>
+         <a href="#" class="page-link">7</a>
+          <span class="dots">...</span>
+          <a href="#" class="page-link">99</a>
+         <a href="#" class="page-link">100</a>
+        </div>
+     <button class="btn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+          </svg>          
+     </button>
+    </div>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<style>
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 900px;
+}
+table{
+    width: 600px;
+    height: 450px;
+}
+thead{
+    background-color: wheat;
+}
+tbody tr:nth-child(odd){
+    background-color:blueviolet;
+    text-align: center;
+}
+tbody tr:nth-child(even){
+    background-color: lightgreen;
+    text-align: center;
+}
+th,tr{
+    padding: 10px;
+}
+</style>
+
+<body>
+    <table>
+        <thead>
+            <th>Movies</th>
+            <th>Actor</th>
+            <th>Actress</th>
+            <th>Days</th>
+        </thead>
+        <t body>
+            <tr>
+                <td>Darling</td>
+                <td>Prabhas</td>
+                <td>Kajal</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Mirchi</td>
+                <td>Prabhas</td>
+                <td>Anushka</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Mr.Perfect</td>
+                <td>Prabhas</td>
+                <td>Tapsi</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Rebel</td>
+                <td>Prabhas</td>
+                <td>Tamana</td>
+                <td>100</td>
+            </tr>
+            
+                        
+        </t>
+
+    </table>
+    
+</body>
+</html>
